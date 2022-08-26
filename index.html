@@ -436,17 +436,13 @@
         </div>
         <div class="footer-subscription">
           <p class="footer-subscription-title">Підпишіться на розсилку</p>
-
           <form class="footer-subscription-form">
-
             <label class="footer-subscription-label" for="user-email"></label>
             <input class="footer-subscription-input" type="email" 
              name="user-email" placeholder="E-mail" required="required">
-          <div class="footer-subscription-btn">
-          <button type="button" class="footer-subscription-btn-text">
-            Підписатися </button><svg class="footer-subscription-icon" width="24"> 
-              <use  href="./img/icon.svg#icon-icon-send"></use></svg>
-            </div>
+          <button type="submit" class="footer-subscription-btn-text">
+            Підписатися <svg class="footer-subscription-icon" width="24" height="24"> 
+              <use  href="./img/icon.svg#icon-icon-send"></use></svg></button>
           </form>
         </div>
     </footer>
@@ -455,27 +451,27 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">          
             <div class="input">
-             <label> <span class="input-label">Ім'я</span></label>
-             <div class="input-wrap"><input type="text" class="form-input" 
+             <label for="user-name" class="input-label">Ім'я</label>
+             <div class="input-wrap"><input id="user-name" type="text" class="form-input" 
               name="user-name" placeholder="" required="required"/>
               <svg class="input-icon" width="18" height="18">
                 <use href="./img/icon.svg#icon-person-black-18dp-11"></use></svg></div></div>
             <div class="input">
-          <label> <span class="input-label">Телефон</span></label>
+          <label for="user-tel" class="input-label">Телефон</label>
           <div class="input-wrap"><input type="tel" class="form-input"
-            name="user-tel" placeholder="" required="required"
+            name="user-tel" id="user-tel" placeholder="" required="required"
            maxlength="10"><svg class="input-icon" width="18" height="18">
              <use href="./img/icon.svg#icon-phone-black-18dp-11"></use></svg></div>
           </div>
              <div class="input">
-          <label> <span class="input-label">Пошта</span></label>
+          <label for="user-email" class="input-label">Пошта</label>
           <div class="input-wrap"><input type="email" class="form-input"
-            name="user-email" placeholder="" required="required"><svg class="input-icon" width="18" height="18">
+            name="user-email" id="user-email" placeholder="" required="required"><svg class="input-icon" width="18" height="18">
              <use href="./img/icon.svg#icon-email-black-18dp-11"></use></svg></div>
           </div>
-           <div class="input">
-           <label><span class="input-label">Коментар</span></label>
-            <textarea class="form-input" name="user-coment" id="user-coment" 
+           <div class="input-coment">
+           <label for="user-coment" class="input-label">Коментар</label>
+            <textarea class="form-input-coment" name="user-coment" id="user-coment" 
             cols="51" rows="5" placeholder="Введіть текст"></textarea></div>
 
           <div class="input-field">
